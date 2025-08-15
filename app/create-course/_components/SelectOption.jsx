@@ -7,8 +7,8 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/app/@/components/ui/select";
-import { Input } from '@/app/@/components/ui/input';
+} from "@/components/ui/select";
+import { Input } from '@/components/ui/input';
 import { UserInputContext } from '@/app/_context/UserInputContext';
 
 function SelectOption() {
@@ -76,10 +76,10 @@ function SelectOption() {
                 </div>
                 <div>
                     <label htmlFor="chapters" className="text-lg font-semibold">Number of Chapters</label>
-                    <Input 
+                    <Input
                         id="chapters"
                         name="chapters"
-                        type="number" 
+                        type="number"
                         placeholder="e.g., 5"
                         value={userCourseInput?.chapters || ''}
                         onChange={handleInputChange}

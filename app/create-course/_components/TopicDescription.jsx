@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useContext } from 'react';
-import { Input } from '@/app/@/components/ui/input';
-import { Textarea } from '@/app/@/components/ui/textarea';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
 import { UserInputContext } from '@/app/_context/UserInputContext';
 
 function TopicDescription() {
@@ -24,13 +24,13 @@ function TopicDescription() {
                         Write the topic for which you want to generate the course
                     </label>
                     <p className="text-gray-500 text-sm">(e.g., Python, Yoga, etc.)</p>
-                    <Input 
+                    <Input
                         id="topic"
                         name="topic"
                         value={userCourseInput?.topic || ''}
                         onChange={handleInputChange}
-                        placeholder="Topic" 
-                        className="mt-2" 
+                        placeholder="Topic"
+                        className="mt-2"
                     />
                 </div>
                 <div className="space-y-2">
@@ -38,13 +38,13 @@ function TopicDescription() {
                         Write a brief description of what you want to cover
                     </label>
                     <p className="text-gray-500 text-sm">(Optional)</p>
-                    <Textarea 
+                    <Textarea
                         id="description"
                         name="description"
                         value={userCourseInput?.description || ''}
                         onChange={handleInputChange}
-                        placeholder="e.g., About your course." 
-                        className="mt-2" 
+                        placeholder="e.g., About your course."
+                        className="mt-2"
                     />
                 </div>
             </div>

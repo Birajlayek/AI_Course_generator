@@ -8,36 +8,36 @@ import { GoStack } from "react-icons/go";
 import { HiOutlineShieldCheck } from "react-icons/hi";
 import { MdOutlinePowerSettingsNew } from "react-icons/md";
 import { usePathname } from 'next/navigation';
-import { Progress } from '@/app/@/components/ui/progress';
+import { Progress } from '@/components/ui/progress';
 
 function SideBar() {
   const menu = [
     {
         id: 1,
         name: 'Home',
-        icon: <IoHome className="h-6 w-6"/>, 
+        icon: <IoHome className="h-6 w-6"/>,
         path: '/dashboard'
     },
     {
         id: 2,
         name: 'Explore',
-        icon: <GoStack className="h-6 w-6"/>, 
+        icon: <GoStack className="h-6 w-6"/>,
         path: '/dashboard/explore'
     },
     {
         id: 3,
         name: 'Upgrade',
-        icon: <HiOutlineShieldCheck className="h-6 w-6"/>, 
+        icon: <HiOutlineShieldCheck className="h-6 w-6"/>,
         path: '/dashboard/upgrade'
     },
     {
         id: 4,
         name: 'Logout',
-        icon: <MdOutlinePowerSettingsNew className="h-6 w-6"/>, 
+        icon: <MdOutlinePowerSettingsNew className="h-6 w-6"/>,
         path: '/dashboard/logout'
     }
   ];
-    
+
   const path = usePathname();
 
   return (
@@ -47,7 +47,7 @@ function SideBar() {
         <div className='mt-5 flex flex-col gap-2'>
             {menu.map((item) => (
                 <Link href={item.path} key={item.id}>
-                  <div 
+                  <div
                     className={`flex items-center gap-3 p-3 rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700
                       ${path === item.path ? 'bg-blue-100 text-blue-700' : 'text-gray-500 hover:text-black'}
                     `}
