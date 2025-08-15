@@ -7,8 +7,8 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/app/ui/select";
-import { Input } from '@/app/ui/input';
+} from "@/app/@/components/ui/select";
+import { Input } from '@/app/@/components/ui/input';
 import { UserInputContext } from '@/app/_context/UserInputContext';
 
 function SelectOption() {

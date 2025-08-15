@@ -8,7 +8,7 @@ import { GoStack } from "react-icons/go";
 import { HiOutlineShieldCheck } from "react-icons/hi";
 import { MdOutlinePowerSettingsNew } from "react-icons/md";
 import { usePathname } from 'next/navigation';
-import { Progress } from '@/app/ui/progress';
+import { Progress } from '@/app/@/components/ui/progress';
 
 function SideBar() {
   const menu = [

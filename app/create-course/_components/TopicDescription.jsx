@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useContext } from 'react';
-import { Input } from '@/app/ui/input';
-import { Textarea } from '@/app/ui/textarea';
+import { Input } from '@/app/@/components/ui/input';
+import { Textarea } from '@/app/@/components/ui/textarea';
 import { UserInputContext } from '@/app/_context/UserInputContext';
 
 function TopicDescription() {
